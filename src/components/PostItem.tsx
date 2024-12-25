@@ -73,8 +73,8 @@ const PostItem = (props: PostItemProps) => {
         variant="text"
         startIcon={<AiFillLike size={16} />}
         onClick={() => handlePostLike(postDetails?.id)}
-        className={` ${
-          hasLiked ? "text-blue-600" : "text-gray-700 hover:text-gray-900"
+        className={`text-gray-700 ${
+          hasLiked ? "!text-blue-600" : "text-gray-700 hover:text-gray-900"
         }`}
       >
         Like {totalLikes > 0 ? `(${totalLikes})` : null}
